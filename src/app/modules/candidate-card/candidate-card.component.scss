@@ -59,12 +59,31 @@
 }
 
 .font-style2 {
-   color: #AAAAAA;	
    font-family: Lato;	
    font-size: 13px;	
    line-height: 16px;
+   opacity: 1;
 }
 
 .job-prior {
     margin-top: -15px;
+}
+
+.current-prior {
+    color: #AAAAAA;
+}
+
+.card-footer {
+    height: 10px;	
+    width: 213px;	
+    margin-top: 153.6px;
+    background-color: white;
+    position:absolute;
+}
+
+.icons {
+    	height: 13px;	
+        width: 16px;	
+        color: #287AB9;	
+        font-size: 13px;	
 }
