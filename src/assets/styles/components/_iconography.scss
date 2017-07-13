@@ -1,0 +1,110 @@
+[class^="cb-icon-"], [class*=" cb-icon-"] {
+    background-image: url("sprites.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 1px;
+    vertical-align: middle;
+    width: 25px;
+    position: relative;
+}
+
+.cb-icon-bell {
+    background-position: 0 0;
+}
+.cb-icon-envelope {
+    background-position: 0 -25px;
+}
+.cb-icon-profile {
+    background-position: 0 -50px;
+}
+.cb-icon-file {
+    background-position: 0 -75px;
+}
+.cb-icon-logout {
+    background-position: 0 -100px;
+}
+.cb-icon-star {
+    background-position: 0 -125px;
+}
+.cb-icon-lock {
+    background-position: 0 -150px;
+}
+.cb-icon-thumbs {
+    background-position: 0 -175px;
+}
+
+.parent{
+  width: 300px;
+  height: auto;
+  border: solid 4px red;
+  &:after{
+    content: "* *";
+    display: block;
+    background: yellow;
+    //height: 150px;
+    border: solid 4px grey;
+    clear: both;
+  }
+   &:before{
+    content: "*";
+    display: block;
+    background: aqua;
+     
+    //height: 150px;
+    border: solid 4px green;
+
+  }
+   
+  .child1{
+    border: solid 1px brown;
+    background: white;
+    min-height: 45px;
+    float: left;
+  }
+
+}
+
+
+
+[class^="cb-atlas-"], [class*=" cb-atlas-"] {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}
+[class^="cb-atlas-lg-"], [class*=" cb-atlas-lg-"] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  -webkit-filter: drop-shadow(5px 5px 2px #ccc); 
+  filter: drop-shadow(5px 5px 2px black);
+}
+[class^="cb-atlas-sm-"], [class*=" cb-atlas-sm-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.cb-atlas-home{
+   fill: teal; 
+}
+.cb-atlas-bell{
+  /*fill: #000000;*/
+}
+.cb-atlas-user{
+  /*fill: #000000;*/
+}
+.cb-atlas-search{
+  /*fill: #000000;*/
+}
+.cb-atlas-exit{
+  /*fill: #000000;*/
+}
+.cb-atlas-mail{
+  /*fill: #000000;*/
+}
+
+

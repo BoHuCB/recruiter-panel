@@ -1,0 +1,75 @@
+ .form-group-large{
+ 	@extend .form-group;
+
+	h5, label{
+		font-size: $font-size-p-large;
+	}
+	span.fa{
+		position: absolute;
+		top: 0px;
+		right: 5px;
+		font-size: 30px;
+		line-height: 50px;
+ 
+	}
+
+	input[type="text"], [type="email"], input[type="password"], select{
+		height: 50px;
+		padding: 10px 10px;
+		font: normal $font-size-p-large  $font-family-base;
+	}
+	&.has-error {
+		ul{
+			li{
+				 font: normal $font-size-p-large  $font-family-base;
+			}
+		}
+	}
+
+	&.has-warning {
+		ul{
+			li{
+				font: normal $font-size-p-large  $font-family-base;
+			}
+		}
+	}
+ }
+
+ .form-group-xlarge{
+ 	@extend .form-group;
+
+	h5, label{
+		font-size: $font-size-p-xlarge;
+	}
+
+	span.fa{
+		position: absolute;
+		top: 0px;
+		right: 5px;
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	input[type="text"], [type="email"], input[type="password"], select{
+		height: 60px;
+		padding: 15px 10px;
+		font: normal $font-size-p-xlarge  $font-family-base;
+	}
+
+	&.has-error {
+		ul{
+			li{
+				 font: normal $font-size-p-xlarge  $font-family-base;
+			}
+		}
+	}
+
+	&.has-warning {
+		ul{
+			li{
+				font: normal $font-size-p-xlarge  $font-family-base;
+			}
+		}
+	}
+
+ }

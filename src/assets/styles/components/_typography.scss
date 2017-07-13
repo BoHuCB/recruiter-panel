@@ -1,0 +1,99 @@
+@mixin heading-generator($font-size) {
+	font-family: $font-family-heading;
+	color: $color-heading;
+	font-size: 	$font-size;
+	line-height: floor($font-size * 1.25);
+	margin-bottom: floor($font-size / 3);
+}
+
+%content-base-style{
+	font-family: $font-family-text;
+	color: $color-text-base;
+	font-size: 	$font-size-base;
+ 	line-height: floor($font-size-base * 1.25);
+	margin-bottom: floor($font-size-base / 3);
+}
+
+
+
+h1{
+	@include heading-generator($font-size-h1)
+}
+
+h2{
+	@include heading-generator($font-size-h2)
+}
+
+h3{
+	@include heading-generator($font-size-h3)
+}
+
+h4{
+	@include heading-generator($font-size-h4)
+}
+
+h5{
+	@include heading-generator($font-size-h5)
+}
+
+h6{
+	@include heading-generator($font-size-h6)
+}
+
+p{
+	@extend %content-base-style;
+}
+
+span{
+	
+}
+
+a{
+	color: $color-link;
+	text-decoration: none;
+	&:hover{
+		color: $color-link-hover;
+	}		
+	&:visited{
+		color: $color-link-visited;
+	}	 
+}
+legend{
+	color: $color-text-base;
+	font-family: $font-family-text;
+	font-size: 	$font-size-legend;
+	margin-bottom: floor($font-size-legend/2);
+}
+label{
+	color: $color-text-dark;
+	font-family: $font-family-text;
+	font-size: 	$font-size-label;
+	margin-bottom: floor($font-size-label/2);
+}
+ 
+ol{
+	list-style-position: inside;
+	margin-bottom: floor($font-size-base/2);
+	li{
+		@extend %content-base-style; 
+	}
+}
+
+ul{
+	list-style-position: inside;
+	font-size: 	$font-size-base;
+	margin-bottom: floor($font-size-base/2);
+	li{
+		margin-bottom: floor($font-size-base/2); 
+	}
+}
+
+dl{
+	margin-bottom: floor($font-size-base/2);
+	dt{
+		font-family: $font-family-heading;
+	}
+	dd{
+		margin-bottom: floor($font-size-base/2);
+	}
+}

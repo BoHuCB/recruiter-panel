@@ -1,0 +1,12 @@
+@mixin standard-vertical-padding() {
+	padding-top: $padding-top-base; 
+	padding-bottom: $padding-bottom-base; 
+}
+
+@mixin standard-padding() {
+	padding: $padding-top-base $padding-right-base $padding-bottom-base $padding-left-base; 
+}
+
+@mixin standard-box-shadow() {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
