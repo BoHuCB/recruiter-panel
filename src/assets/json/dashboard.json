@@ -1,0 +1,37 @@
+[{
+    "title": "Under Consideration",
+    "status": 0,
+    "orderNumber": 0,
+    "style": "",
+    "isDraggable": false,
+    "isDropable": false,
+    "isMoveable": false
+  },
+  {
+    "title": "Contact",
+    "status": 0,
+    "orderNumber": 1,
+    "style": "",
+    "isDraggable": true,
+    "isDropable": true,
+    "isMoveable": true
+  },
+  {
+    "title": "Send to Hiring Manager",
+    "status": 0,
+    "orderNumber": 2,
+    "style": "",
+    "isDraggable": true,
+    "isDropable": true,
+    "isMoveable": true
+  },
+  {
+    "title": "Liked by Hiring Manager",
+    "status": 0,
+    "orderNumber": 3,
+    "style": "",
+    "isDraggable": true,
+    "isDropable": true,
+    "isMoveable": true
+  }
+]
