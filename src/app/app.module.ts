@@ -9,6 +9,7 @@ import { StageComponent } from './modules/stage/stage.component';
 import { Ng2DragDropModule } from 'ng2-drag-drop';
 import { appRoutes } from "./app.routing";
 import { RouterModule } from "@angular/router";
+import { CandidateCardComponent } from './modules/candidate-card/candidate-card.component';
 
 const cbvdl = [
   HeaderModule,
@@ -20,7 +21,8 @@ const cbvdl = [
   declarations: [
     AppComponent,
     MainPageComponent,
-    StageComponent
+    StageComponent,
+    CandidateCardComponent
   ],
   imports: [
     BrowserModule,
