@@ -1,0 +1,70 @@
+.card {
+    	height: 184px;	
+        width: 253px;	
+        border: 1px solid #D8D8D8;
+        border-radius: 3px;	
+        background-color: #FFFFFF;
+        position:relative;
+}
+
+.name-location {
+    height: 50px;	
+    width: 157px;	
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 76px;
+    margin-bottom: 114px;
+    position:absolute;
+}
+
+.job-info {
+    	height: 64px;	
+        width: 213px;	
+        position:absolute;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 76px;
+        margin-bottom: 44px;
+}
+
+.line {
+    	box-sizing: border-box;	
+        height: 3px;	
+        width: 253px;	
+        border: 1px solid #D8D8D8;
+        margin-top: 150.6px;
+        position:absolute;
+}
+
+.name {
+    color: #2A7AB8;	
+    font-weight: bold;	
+}
+
+.font-style1 {
+    font-family: Lato;	
+    font-size: 14px;	
+    line-height: 17px;
+    opacity: 1;
+}
+
+.title{
+    font-weight: bold;	
+    margin-top: -18px;
+    font-weight: bold;	
+}
+
+.location {
+    margin-top: -18px;
+}
+
+.font-style2 {
+   color: #AAAAAA;	
+   font-family: Lato;	
+   font-size: 13px;	
+   line-height: 16px;
+}
+
+.job-prior {
+    margin-top: -15px;
+}
