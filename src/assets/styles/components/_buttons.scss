@@ -1,0 +1,144 @@
+@mixin button-mixin($bg-color, $bg-color-hover, $bg-color-active){
+	font: $btn-font;
+	cursor: pointer;
+	color: $btn-color;
+	text-align: center;
+	display: inline-block;
+	padding: $btn-padding-base;
+	border: $btn-border;
+	border-radius: $btn-border-radius;
+	margin: $btn-margin;
+
+	background-color: $bg-color;
+	border: $bg-color;
+	
+	&:hover {
+    background-color: $bg-color-hover;
+    border-color: $bg-color-hover;
+	}
+	
+	&:active {
+    background-color: $bg-color-active;
+   	border-color: $bg-color-active;
+	}
+
+	&:disabled {
+    background: $white;
+    border: solid 1px $gray;
+    color: $gray;
+	} 
+}
+
+.btn-primary  {
+  @include button-mixin($accent-jade, $accent-jade-light, $accent-jade-dark);
+}
+.btn-secondary {
+  @include button-mixin($color-secondary, $color-secondary-light, $color-secondary-dark);
+ }
+.btn-tertiary {
+  @include button-mixin($color-tertiary, $color-tertiary-light, $color-tertiary-dark);
+ }
+
+
+.btn-negative {
+    @include button-mixin($white, $color-primary-light, $color-primary-dark);
+
+    background-color: $white;
+    color: $color-primary;
+    border: $btn-border-negative;
+    box-sizing: border-box;
+    &:hover {
+    color: $color-primary-dark;
+    border: solid 1px $color-primary-dark;;
+
+    }
+    &:active {
+        color: $color-primary-light;
+    border: solid 1px $color-primary-light;;
+    }
+    &:disabled {
+    background: $white;
+    border: solid 1px $gray;
+    color: $gray;
+    } 
+}
+
+.btn-primary-fluid{
+	@extend .btn-primary;
+	width: 100%;
+}
+.btn-secondary-fluid{
+	@extend .btn-secondary;
+	width: 100%;
+}
+.btn-secondary-tertiary{
+	@extend .btn-tertiary;
+	width: 100%;
+}
+
+
+@mixin btn-extension-large{
+	font: $btn-font-large;
+	padding: $btn-padding-large;
+	margin: $btn-margin-large;
+
+}
+ @mixin btn-extension-xlarge{
+	font: $btn-font-xlarge;
+	padding: $btn-padding-xlarge;
+	margin: $btn-margin-xlarge;
+
+}
+
+.btn-negative-large{
+  @extend .btn-negative;
+	@include btn-extension-large;
+}
+.btn-primary-large{
+	@extend .btn-primary;
+	@include btn-extension-large;
+}
+.btn-secondary-large{
+	@extend .btn-secondary;
+	@include btn-extension-large;
+}
+.btn-tertiary-large{
+	@extend .btn-tertiary;
+	@include btn-extension-large;
+}
+
+.btn-negative-xlarge{
+	@extend .btn-negative;
+	@include btn-extension-xlarge;
+}
+.btn-primary-xlarge{
+ 	@extend .btn-primary;
+	@include btn-extension-xlarge;
+}
+.btn-secondary-xlarge{
+	@extend .btn-secondary;
+	@include btn-extension-xlarge;
+}
+.btn-tertiary-xlarge{
+	@extend .btn-tertiary;
+	@include btn-extension-xlarge;
+}
+
+
+@media (max-width: $screen-xs-max){
+	@mixin button-mixin($bg-color, $bg-color-hover, $bg-color-active){
+		 width: 100%;
+	}
+}
+
+.btn .notes-button{
+    color: #39B3E1;
+    font-weight: 600;
+    background: #fff;
+    border: 2px solid #39B3E1;
+    }
+
+.btn .notes-button:focus{
+    outline: none !important;
+    }
+

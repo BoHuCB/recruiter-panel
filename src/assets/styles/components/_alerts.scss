@@ -1,0 +1,28 @@
+ 
+.alert{
+	border-radius: 4px;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	color: $white;
+    top: 25%;
+}
+.alert-success{
+	@extend .alert;
+	background: $color-success;
+}
+.alert-warning{
+	@extend .alert;
+	background: $color-warning;
+}
+.alert-danger{
+	@extend .alert;
+	background: $color-error;
+}
+
+
+[class^="alert-"],
+[class*=" alert-"] {
+	a{
+		float: right;
+	}
+}

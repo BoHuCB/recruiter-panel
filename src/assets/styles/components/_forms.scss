@@ -1,0 +1,155 @@
+@mixin placeholder{
+	&::-webkit-input-placeholder{
+		color: $gray-light;
+		font-style: italic;
+	}
+
+	&:-moz-placeholder{ /* Firefox 18- */
+		color: teal;
+		font-style: italic;  
+	}
+
+	&::-moz-placeholder{  /* Firefox 19+ */
+		color: teal; 
+		font-style: italic; 
+	}
+
+	&:-ms-input-placeholder{  
+		color: teal;  
+		font-style: italic;
+	}
+}
+
+
+.form-group{
+	margin-bottom: $margin-bottom-base;
+	h5, label{
+		display: inline-block;
+    em{
+	    color: $color-mandate;
+	    font-style: normal;
+    }
+	}
+	h5{
+		color: $color-text;
+		font-family: $font-family-text;
+	}
+	.input-group{
+		position: relative;
+ 	}
+
+	span.fa{
+		position: absolute;
+		top: 0px;
+		right: 5px;
+		font-size: 21px;
+		line-height: 34px;
+		&.fa-exclamation-circle{
+			color: $color-warning
+		}
+		&.fa-times-circle{
+			color: $color-error
+		}
+		&.fa-check-circle{
+			color: $color-success;
+		}
+	}
+	
+	.radio, .checkbox{
+		label,p{
+			font-weight: normal;
+		}
+
+		input[type="checkbox"], input[type="radio"]{
+		    margin: 0;
+		}
+	}
+	 
+	input[type="text"], [type="email"], input[type="password"], select{
+		width: 100%;
+		height: 34px;
+		margin: 0 0 8px 0;
+		padding: 6px 12px;
+		display: inline-block;
+		box-sizing: border-box;
+		background-color: #FFFFFF;
+		border: 1px solid $gray;
+		color: $color-text;
+		font: normal $font-size-p  $font-family-base;
+		transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+		&:disabled {
+		    background: $gray-dark;
+		    border: solid 1px $gray-darker;
+		}
+
+		@include placeholder;
+
+
+	}
+
+ 	textarea{
+		width: 100%;
+		padding: 6px 12px;
+		resize: vertical;
+		color: $color-text;
+		font: normal $font-size-p  $font-family-base;
+		border: 1px solid $gray;
+		background-color: $white;
+		@include placeholder;
+	}
+
+	&.has-success{
+	    input[type="text"], 
+		[type="email"], 
+		input[type="password"], 
+		select {
+			border: 1px solid $color-success;
+ 		//	color: $color-success;
+		}
+	}
+	
+	&.has-error {
+		input[type="text"], 
+		[type="email"], 
+		input[type="password"], 
+		select {
+			border: 1px solid $color-error;
+		}
+		p{
+			color: $color-error;
+		}
+		ul{
+			li{
+				color: $color-error;
+			}
+		}
+	}
+
+	&.has-warning {
+		input[type="text"], 
+		[type="email"], 
+		input[type="password"], 
+		select {
+			border: 1px solid $color-warning;
+		//	color: $color-warning;
+		}
+		ul{
+			li{
+				color: orange;
+			}
+		}
+	}
+}
+
+.form-classic{
+	max-width: 430px;
+	display: block;
+
+	.form-group{
+		h5, label, input[type="text"], [type="email"], input[type="password"], select, textarea{
+		//	max-width: 430px;
+		}
+	}
+}	
+
+ 

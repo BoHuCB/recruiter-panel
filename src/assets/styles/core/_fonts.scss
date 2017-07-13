@@ -1,0 +1,42 @@
+@mixin font-face($font-family, $font-file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family   : $font-family;
+    src           : url('#{$font-file-path}.eot');
+    src           : url('#{$font-file-path}.eot?#iefix') format('embedded-opentype'),
+                    url('#{$font-file-path}.woff') format('woff'),
+                    url('#{$font-file-path}.woff2') format('woff2'),
+                    url('#{$font-file-path}.ttf') format('truetype'),
+                    url('#{$font-file-path}.svg##{$font-family}') format('svg');
+    font-weight   : $font-weight;
+    font-style    : $font-style;
+    text-rendering: optimizeLegibility;
+
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family : $font-family;
+      src         : url('#{$font-file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@include font-face(Lato-Light, '#{$font-base-url}/Lato/Lato-Light', 300, normal);
+@include font-face(Lato-Regular, '#{$font-base-url}/Lato/Lato-Regular', 400, normal);
+@include font-face(Lato-Bold, '#{$font-base-url}/Lato/Lato-Bold', 700, normal);
+
+@font-face {
+    font-family   : Sanchez-Regular;
+    src           : url('#{$font-base-url}/Sanchez/Sanchez-Regular.ttf') format('truetype');
+    src           : url('#{$font-base-url}/Sanchez/Sanchez-Regular.otf') format('opentype');
+    font-weight   : 400;
+    font-style    : normal;
+    text-rendering: optimizeLegibility;
+}
+
+// @media screen and (-webkit-min-device-pixel-ratio: 0) {
+//     @font-face {
+//         font-family : Sanchez-Regular;
+//         src         : url('#{$font-base-url}/Sanchez/Sanchez-Regular.svg##Sanchez-Regular') format('svg');
+//     }
+// }
