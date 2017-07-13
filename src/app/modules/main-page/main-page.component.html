@@ -1,3 +1,7 @@
-<p>
-  main-page works!
-</p>
+<cb-framework [headerObj]="headerObj" (ngValueChange)="handleHeaderChanges($event)">
+  <div class="bodyStyle jobposting">
+    <router-outlet></router-outlet>
+    <p>main page works</p>
+  </div>
+</cb-framework>
+

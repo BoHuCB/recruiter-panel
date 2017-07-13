@@ -1,0 +1,294 @@
+//== Global asset path definitions
+
+//$image-base-url				:	"/assets/images";
+$font-base-url					:	"assets/fonts";
+
+//== Colors
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Use either lighten or darken functions to produce
+the shades of gray
+eg: lighten(#000, 25%)
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+
+$white							:	#fff;
+$gray							:	#999;
+$gray-light						:	#bbb;
+$gray-lighter					:	#ccc;
+$gray-lightest					:	#f4f4f4;
+$gray-dark						:	#666;
+$gray-darker					:	#333;
+$black							:	#000;
+
+
+// other colors used
+$very-light-gray                :   #eeeeee;
+$light-sky-blue                 :   #39b3e1;
+$secondary-gray                 :   #969696;
+$dark-link-blue                 :   #2a7ab8;
+$favorite-green                 :   #009b74;
+// dark gray is $gray
+// lime green is $accent-alpha
+// anchor blue is $color-primary
+$light-highlight-blue           :   #caeffd;
+$placeholder-gray               :   #aba9a9;
+$star-yellow                    :   #f7b800;
+$filter-blue                    :   #2A7AB8;
+
+
+
+//-- Brand Pallette
+$color-primary					:	#182642; //Anchor Blue
+$primary-blue           : #2A7AB8;
+$color-secondary				:	#009b74; //Employer Green
+$color-tertiary					:	#287ab9; //Azure Blue
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Get with visual designers to see how the shades are
+achieved and use the right color functions
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+
+$color-primary-light			:	rgba($color-primary, .75);
+$color-primary-lighter			:	rgba($color-primary, .5);
+$color-primary-lightest			:	rgba($color-primary, .25);
+
+$color-secondary-light			:	rgba($color-secondary, .75);
+$color-secondary-lighter		:	rgba($color-secondary, .5);
+$color-secondary-lightest		:	rgba($color-secondary, .25);
+
+$color-tertiary-light			:	rgba($color-tertiary, .75);
+$color-tertiary-lighter			:	rgba($color-tertiary, .5);
+$color-tertiary-lightest		:	rgba($color-tertiary, .25);
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Get with visual designers to see if the darker
+shades can be decommisioned
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+
+$color-primary-dark				:	mix($color-primary, $black, 25%);
+$color-primary-darker			:	mix($color-primary, $black, 50%);
+
+$color-secondary-dark			:	mix($color-secondary, $black, 25%);
+$color-secondary-darker			:	mix($color-secondary, $black, 50%);
+
+$color-tertiary-dark			:	mix($color-tertiary, $black, 25%);
+$color-tertiary-darker			:	mix($color-tertiary, $black, 50%);
+
+//--	Accents Pallette
+
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Get with visual designers to see if the relative
+shades are a percentage of black or white if so
+use color mixins.
+eg: mix($accent-alpha, $black, 25%);
+eg: mix($accent-alpha, $white, 25%);
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+$accent-alpha					:	#85ce3f; //Lime
+$accent-alpha-light				:	#9dd865;
+$accent-alpha-lighter			:	#b6e28c;
+$accent-alpha-dark				:	#6fac40;
+$accent-alpha-darker			:	#598b40;
+
+$accent-beta					:	#63c0b9; //Teal
+$accent-beta-light				:	#82cdc7;
+$accent-beta-lighter			:	#a1d9d5;
+$accent-beta-dark				:	#54a1a1;
+$accent-beta-darker				:	#458289;
+
+
+$accent-gamma					:	#09a0db; //Sky Blue
+$accent-gamma-light				:	#3ab3e2;
+$accent-gamma-lighter			:	#6bc5e9;
+$accent-gamma-dark				:	#0c88bc;
+$accent-gamma-darker			:	#0f6f9e;
+
+$accent-delta					:	#e78523; //orange
+$accent-delta-light				:	#ec9d4f;
+$accent-delta-lighter			:	#f1b67b;
+$accent-delta-dark	 	 		:	#be7229;
+$accent-delta-darker			:	#945f2f;
+
+
+//--	Font
+
+$color-text-base				: 	$gray-dark;
+$color-text-light				: 	$gray;
+$color-text-dark				: 	$gray-darker;
+
+
+$color-heading					: 	$color-text-dark;
+$color-link						: 	$accent-gamma;
+$color-link-hover				: 	$accent-gamma-dark;
+$color-link-visited				: 	$accent-gamma-darker;
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Get with visual designers to see if there is a need
+for the dark version and also if the light and dark
+can be a percentage of base color
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+
+
+//--	Validation
+$color-info						:	#2879b8;	//blue
+$color-info-light				:	#c8e6fe;
+$color-success					:	#85ce3f;	//green
+$color-success-light			:	#e0fdc3;
+$color-warning					:	#fac400;	//orange
+$color-warning-light			:	#fdf1c1;
+$color-error					:	#fe3c30;	//red
+$color-error-light				:	#fed1ce;
+$color-mandate					: 	$color-error;
+
+
+//--	Background
+$bg-primary						:	$color-primary;
+$bg-secondary					:	$gray-lightest;
+
+$bg-body						: 	$white;
+$bg-header						:	$white;
+$bg-nav							:	$color-primary;
+$bg-footer						: 	$gray-lightest;
+$bg-central-container			:	$bg-secondary;
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Clean / wipe off the below defenitions if not used
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+$bg-nav-employer				:	$accent-alpha;
+$bg-module-container			:	$white;
+$bg-module-header				:	$accent-alpha-light;
+$bg-module-body					:	$bg-secondary;
+$bg-module-footer				:	$accent-beta-light;
+
+
+//==  Font Families
+$font-family-lato-light			:	'Lato-Light', Helvetica, Arial, sans-serif;
+$font-family-lato				:	'Lato-Regular', Helvetica, Arial, sans-serif;
+$font-family-lato-bold			:	'Lato-Bold', Helvetica, Arial, sans-serif;
+
+$font-weight-base 				:	400;
+$font-weight-light				:	300;
+$font-weight-bold				:	700;
+
+$font-size-base					:	16px;
+$font-family-base				: 	$font-family-lato;
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Clean / wipe off the below accent font defenitions
+if not used or defined by designers
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+$font-family-sanchez			:	Sanchez, Helvetica, Arial, sans-serif;
+$font-family-droid-serif		:	'Droid Sans', sans-serif;
+$font-family-accent				: 	$font-family-sanchez;
+
+
+$font-family-text				: 	$font-family-base;
+$font-family-heading			:	$font-family-base;
+$font-family-CTA				:	$font-family-base;
+//$font-family-button				:	$font-family-base;
+
+
+$font-size-xsmall				:	floor($font-size-base * .75);	//14px
+$font-size-small				:	floor($font-size-base * .875);	//14px
+$font-size-large				: 	floor($font-size-base * 1.125);	//18px
+$font-size-xlarge				: 	floor($font-size-base * 1.875);	//30px;
+
+$font-size-p					:	$font-size-base;
+$font-size-legend				: 	$font-size-base;
+$font-size-label				:	$font-size-base;
+$font-size-h1					: 	floor(($font-size-base * 2)); 		// 32px
+$font-size-h2					: 	floor(($font-size-base * 1.75)); 	// 28px
+$font-size-h3					: 	floor(($font-size-base * 1.5)); 	// 24px
+$font-size-h4					:	floor(($font-size-base * 1.25));	// 20px
+$font-size-h5					:	$font-size-base; 					// 16px
+$font-size-h6					:	floor(($font-size-base * .875));	// 14px
+
+$font-size-CTA					:	$font-size-base;
+$font-size-CTA-large			:	$font-size-large;
+$font-size-CTA-xlarge			:	$font-size-xlarge;
+
+$font-size-p-large				:	$font-size-large;
+$font-size-p-xlarge				:	$font-size-xlarge;
+
+$font-weight-heading			:	$font-weight-bold;
+
+//-- border
+
+$border-radius-base				:	3px;
+$border-radius-large			:   6px;
+$border-radius-small			:   2px;
+$border-color             : #e9e9e9;
+
+//==	Scaffolding
+
+$screen-sm-min 	: 640px;
+$screen-md-min	: 992px;
+$screen-lg-min	: 1200px;
+$container-max	: 1600px;
+$grid-gutter-width	: 30px;
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+padding and margin base are arbitary values get
+them reviewed by a designer
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/
+$padding-base 					:  $grid-gutter-width / 2;
+$margin-base  					:  $grid-gutter-width / 2;
+$padding-small 					:  $grid-gutter-width / 3; 		// 7px;
+$margin-small  					:  $grid-gutter-width / 3;		// 7px;
+$padding-xsmall 				:  $grid-gutter-width / 6; 		// 5px;
+$margin-xsmall  				:  $grid-gutter-width / 6;		// 5px;
+
+$padding-vertical-base			:	$padding-base;
+$padding-horizontal-base		:	$padding-base;
+
+
+$margin-vertical-base			:	$margin-base;
+$margin-horizontal-base	 		:	$margin-base;
+
+
+/*~~Start~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~
+
+Revist the button variable defenitions
+
+
+//-- Button
+//$btn-color 						:	$white;
+//$btn-border-radius 				:	$border-radius-base;
+//$btn-border 					:	none;
+//$btn-border-primary				:	solid 1px $color-primary;
+//$btn-border-secondary			:	solid 1px $color-secondary;
+//$btn-border-tertiary			:	solid 1px $color-tertiary;
+//$btn-border-negative			:	solid 1px $gray	;
+
+
+//$btn-padding-base 				:	5px 30px;
+//$btn-padding-large 				:	7px 30px;
+//$btn-padding-large  			:	11px 15px;
+//$btn-padding-xlarge 			:	10px 15px;
+
+//$btn-margin 					:	0 0 10px 0;
+//$btn-margin-large				:	0 0 15px 0;
+//$btn-margin-xlarge				:	0 0 20px 0;
+
+//$btn-font						:	normal $font-size-CTA $font-family-button;
+//$btn-font-large					:	normal floor(($font-size-CTA * 1.125)) $font-family-button;
+//$btn-font-xlarge				:	normal floor(($font-size-CTA * 1.875)) $font-family-button;
+
+
+
+~~~~End~~~~~~~~~~~~~~~~  TODO  ~~~~~~~~~~~~~~~~~~~*/

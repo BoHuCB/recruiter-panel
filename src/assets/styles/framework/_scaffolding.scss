@@ -1,0 +1,66 @@
+// ---- Bootstrap container made fluid. Port this fragment to an approporate spot ------------
+a {
+  color: $light-sky-blue;
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+}
+
+html {
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 14px;
+  background: $gray-lightest;
+  color: #000;
+}
+
+.central-container {
+  background: $bg-central-container;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    width: auto;
+    padding-left: $padding-base;
+    padding-right: $padding-base;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .container {
+    width: auto;
+    padding-left: $padding-base;
+    padding-right: $padding-base;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .container {
+    max-width: $container-max;
+    width: 100%;
+    padding-left: $padding-base;
+    padding-right: $padding-base;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .container { max-width: $container-max; }
+}
+
+.no-left-padding {
+  padding-left: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin { margin: 0; }
+
+.row-separator { margin-bottom: 30px; }
+
+.hidden-md-down {
+  @media (max-width: 991px) { display: initial !important; }
+  @media (max-width: $screen-md-min - 1) { display: none !important; }
+}
