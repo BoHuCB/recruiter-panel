@@ -1,7 +1,21 @@
 <cb-framework [headerObj]="headerObj" (ngValueChange)="handleHeaderChanges($event)">
-  <div class="bodyStyle jobposting">
-    <router-outlet></router-outlet>
+  <div class="body">
+    <div class="sub-header container-fluid"></div>
+
+    <div class="search container-fluid"></div>
+
+    <div class="panel container-fluid">
+  <div class="row">
+    <div class="column container">
+      <app-candidate-card></app-candidate-card>
+    </div>
+    <div class="column container"></div> 
+    <div class="column container"></div>
+  </div>
+    </div>
+
     <app-dahsboard>main page works</app-dahsboard>
+
   </div>
 </cb-framework>
 
