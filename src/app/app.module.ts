@@ -27,14 +27,8 @@ const cbvdl = [
     AppComponent,
     MainPageComponent,
     DashboardComponent,
-<<<<<<< HEAD
-    StageComponent,
     CandidateCardComponent,
     TabControlComponent
-=======
-    CandidateCardComponent
->>>>>>> 42464a6f64d2c9122900fc24bfc9d74a0111350b
-
   ],
   imports: [
     BrowserModule,
