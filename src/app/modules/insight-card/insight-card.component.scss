@@ -1,0 +1,37 @@
+.insight-card {
+    height: 24px;	
+    min-width: 100px;	
+    border: 1px solid #09A0DB;	
+    border-radius: 100px;
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+.insight-card-font {
+    height: 16px;	
+    color: #4A4A4A;	
+    font-family: Lato;	
+    font-size: 13px;	
+    line-height: 16px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.insight-card-square {
+    height: 16px;	
+    width: 35px;	
+    line-height: 16px;	
+    text-align: center;
+    border-radius: 10px;
+    background-color: #1EA1D9;
+    margin-top: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.insight-card-count {
+    color: #FFFFFF;	
+    font-family: Lato;	
+    font-size: 13px;	
+    font-weight: bold;	
+}
