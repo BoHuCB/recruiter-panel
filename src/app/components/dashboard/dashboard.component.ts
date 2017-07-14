@@ -20,12 +20,14 @@ export class DashboardComponent implements OnInit {
   }
 
   onDropElement(control: any, destStatus: number) {
-debugger;
+
     let destination = this.itemsList.filter(element => { return element.status === destStatus })[0].candidates;
 
     destination.push(control.dragData);
 
     this.removeItem(control.dragData);
+
+    (<Candidate>control.dragData).status = destStatus;
   }
 
   removeItem(item: Candidate) {
@@ -37,6 +39,7 @@ debugger;
     }).indexOf(item.did);
 
     origin.splice(index, 1);
+
   }
 
 }

@@ -2,7 +2,7 @@
 
 .boardItem {
   height: 897.99px;
-  width: 291px;
+  min-width: 291px;
   border-radius: 3px;
   background-color: #F6F6F6;
   display: inline-block;
@@ -48,21 +48,29 @@
   font-size: 10px;
 }
 
-
 .circleColor2 {
   color: #FDB816;
   font-size: 10px;
 }
-
 
 .circleColor3 {
   color: #0195A3;
   font-size: 10px;
 }
 
-
 .circleColor4 {
   color: #09A0DB;
   font-size: 10px;
 }
 
+.drag-hint {
+  border: #ffc100 dashed 2px;
+}
+
+.drag-target-border {
+  border: #00bfff dashed 2px;
+}
+
+.drag-target-border-green {
+  border: #3c763d dashed 2px;
+}

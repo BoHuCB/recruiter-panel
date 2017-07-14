@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center">
-  <div *ngFor="let element of itemsList; let i =index" class="boardItem" droppable [dropScope]="'candidates'" draggable="true" (onDrop)="onDropElement($event, element.status)">
+  <div *ngFor="let element of itemsList; let i =index" class="boardItem" droppable [dragOverClass]="'drag-target-border'" [dropScope]="'candidates'" draggable="true" (onDrop)="onDropElement($event, element.status)">
     <div class="itemHeader">
       <i class="fa fa-circle" aria-hidden="true"
       [class.circleColor1] = "i==0"
@@ -7,7 +7,7 @@
       [class.circleColor3] = "i==2"
       [class.circleColor4] = "i==3"
       [class.circleColor5] = "i==4"
-      [class.circleColor6] = "i==5."
+      [class.circleColor6] = "i==5"
       ></i>
       <label class="itemlabel">{{element.title}}</label>
       <input class="itemlabel" *ngIf="false" [(ngModel)]="element.title" />
