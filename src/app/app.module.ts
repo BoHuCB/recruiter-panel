@@ -14,6 +14,7 @@ import { RouterModule } from "@angular/router";
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardService } from './services/dashboard.service';
 import { CandidateCardComponent } from './modules/candidate-card/candidate-card.component';
+import { SearchBoxComponent } from './modules/search-box/search-box.component';
 
 
 const cbvdl = [
@@ -28,7 +29,8 @@ const cbvdl = [
     MainPageComponent,
     DashboardComponent,
     StageComponent,
-    CandidateCardComponent
+    CandidateCardComponent,
+    SearchBoxComponent
 
   ],
   imports: [
