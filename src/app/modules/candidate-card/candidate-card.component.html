@@ -1,5 +1,8 @@
-<div class="card" draggable="true">
+<div class="card" draggable="true" [dragScope]="'candidates'" [dragData]="Item" 
+[dragClass]="'drag-over'">
+
   <div class="square-tn" *ngIf="isInTN"><p class="word-tn">In your TN</p></div>
+
   <div><input type="checkbox" class="icon-checkbox"></div>
   <div class="name-square"><span class="name-initials">{{nameInitials}}</span></div>
   <div class="icon-ellipsis icons">

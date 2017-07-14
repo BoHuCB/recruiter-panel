@@ -1,30 +1,76 @@
-.dashboard {
-    
-}
+.dashboard {}
 
 .boardItem {
   height: 897.99px;
-  width: 291px;
-  opacity: 0.5;
+  min-width: 291px;
   border-radius: 3px;
   background-color: #F6F6F6;
   display: inline-block;
   margin: 20px;
 }
 
-.Itemlabel {
-  color: #000000;
+.itemHeader {
+  padding-left: 18px;
+  padding-top: 20px;
+}
+
+.itemActions {
+  float: right;
+  padding-right: 18px;
+}
+
+.itemlabel {
+  color: #4A4A4A;
   font-family: Lato;
   font-size: 18px;
   line-height: 18px;
-  margin-left: 18px;
-  margin-top: 20px;
+  padding-left: 10px;
 }
 
 .dashboardItem {
-  padding: 20px;  
+  margin-top: 20px;
+  padding: 20px;
+  overflow: scroll;
+  height: 800px;
 }
 
-.dashboardItem /deep/ div {
+.dashboardItem /deep/ > div {
   margin-bottom: 20px;
+}
+
+.labelNumber {
+  color: #4A4A4A;
+  opacity: 0.5;
+}
+
+.circleColor1 {
+  color: #673AB7;
+  font-size: 10px;
+}
+
+.circleColor2 {
+  color: #FDB816;
+  font-size: 10px;
+}
+
+.circleColor3 {
+  color: #0195A3;
+  font-size: 10px;
+}
+
+.circleColor4 {
+  color: #09A0DB;
+  font-size: 10px;
+}
+
+.drag-hint {
+  border: #ffc100 dashed 2px;
+}
+
+.drag-target-border {
+  border: #00bfff dashed 2px;
+}
+
+.drag-target-border-green {
+  border: #3c763d dashed 2px;
 }

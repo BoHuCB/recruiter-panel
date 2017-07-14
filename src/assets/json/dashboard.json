@@ -7,6 +7,7 @@
     "isDropable": false,
     "isMoveable": false,
     "candidates": [{
+        "did": "1",
         "name": "",
         "currentTitle": "",
         "location": "",
@@ -17,6 +18,7 @@
         "status": 0
       },
       {
+        "did": "2",
         "name": "",
         "currentTitle": "",
         "location": "",
@@ -26,6 +28,7 @@
         "priorEmployer": "",
         "status": 0
       }, {
+        "did": "3",
         "name": "",
         "currentTitle": "",
         "location": "",
@@ -35,6 +38,7 @@
         "priorEmployer": "",
         "status": 0
       }, {
+        "did": "4",
         "name": "",
         "currentTitle": "",
         "location": "",
@@ -44,6 +48,7 @@
         "priorEmployer": "",
         "status": 0
       }, {
+        "did": "5",
         "name": "",
         "currentTitle": "",
         "location": "",
@@ -57,7 +62,7 @@
   },
   {
     "title": "Contact",
-    "status": 0,
+    "status": 1,
     "orderNumber": 1,
     "style": "",
     "isDraggable": true,
@@ -67,7 +72,7 @@
   },
   {
     "title": "Send to Hiring Manager",
-    "status": 0,
+    "status": 2,
     "orderNumber": 2,
     "style": "",
     "isDraggable": true,
@@ -77,7 +82,7 @@
   },
   {
     "title": "Liked by Hiring Manager",
-    "status": 0,
+    "status": 3,
     "orderNumber": 3,
     "style": "",
     "isDraggable": true,

@@ -21,18 +21,6 @@
         margin-bottom: 17px;
 }
 
-.placeholder {
-  height: 18px;	
-  width: 52px;	
-  color: #767676;	
-  font-family: Lato;	
-  font-size: 14px;	
-  line-height: 18px;
-  margin-top: 136px;
-  margin-left: 40px;
-  position: absolute;
-}
-
 .placeholder-icon {
     position: absolute;
    	height: 18px;	
@@ -55,4 +43,36 @@
   line-height: 18px;
   padding-left: 20px;
   position: absolute;
+}
+
+.candidates-insight {
+    	height: 90px;	
+        width: 1174px;	
+        border: 1px solid #1EA1D9;	
+        background-color: rgba(9,160,219,0.05);
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 24px;
+}
+
+.search-font1 {
+    	height: 16px;	
+        width: 194px;	
+        color: #182642;	
+        font-family: Lato;	
+        font-size: 16px;	
+        line-height: 16px;
+        margin-top: 13px;
+        margin-left: 15px;
+}
+
+.search-font2 {
+    height: 16px;	
+    width: 565px;	
+    color: #767676;	
+    font-family: Lato;	
+    font-size: 12px;	
+    line-height: 16px;
+    margin-top: 14px;
+    margin-left: 14px;
 }
