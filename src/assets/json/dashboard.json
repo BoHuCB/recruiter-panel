@@ -5,7 +5,55 @@
     "style": "",
     "isDraggable": false,
     "isDropable": false,
-    "isMoveable": false
+    "isMoveable": false,
+    "candidates": [{
+        "name": "",
+        "currentTitle": "",
+        "location": "",
+        "currentJob": "",
+        "currentEmployer": "",
+        "priorJob": "",
+        "priorEmployer": "",
+        "status": 0
+      },
+      {
+        "name": "",
+        "currentTitle": "",
+        "location": "",
+        "currentJob": "",
+        "currentEmployer": "",
+        "priorJob": "",
+        "priorEmployer": "",
+        "status": 0
+      }, {
+        "name": "",
+        "currentTitle": "",
+        "location": "",
+        "currentJob": "",
+        "currentEmployer": "",
+        "priorJob": "",
+        "priorEmployer": "",
+        "status": 0
+      }, {
+        "name": "",
+        "currentTitle": "",
+        "location": "",
+        "currentJob": "",
+        "currentEmployer": "",
+        "priorJob": "",
+        "priorEmployer": "",
+        "status": 0
+      }, {
+        "name": "",
+        "currentTitle": "",
+        "location": "",
+        "currentJob": "",
+        "currentEmployer": "",
+        "priorJob": "",
+        "priorEmployer": "",
+        "status": 0
+      }
+    ]
   },
   {
     "title": "Contact",
@@ -14,7 +62,8 @@
     "style": "",
     "isDraggable": true,
     "isDropable": true,
-    "isMoveable": true
+    "isMoveable": true,
+    "candidates": []
   },
   {
     "title": "Send to Hiring Manager",
@@ -23,7 +72,8 @@
     "style": "",
     "isDraggable": true,
     "isDropable": true,
-    "isMoveable": true
+    "isMoveable": true,
+    "candidates": []
   },
   {
     "title": "Liked by Hiring Manager",
@@ -32,6 +82,7 @@
     "style": "",
     "isDraggable": true,
     "isDropable": true,
-    "isMoveable": true
+    "isMoveable": true,
+    "candidates": []
   }
 ]

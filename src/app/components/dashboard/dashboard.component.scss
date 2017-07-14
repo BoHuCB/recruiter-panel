@@ -20,3 +20,11 @@
   margin-left: 18px;
   margin-top: 20px;
 }
+
+.dashboardItem {
+  padding: 20px;  
+}
+
+.dashboardItem /deep/ div {
+  margin-bottom: 20px;
+}
