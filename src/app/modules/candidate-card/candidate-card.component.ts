@@ -28,8 +28,10 @@ export class CandidateCardComponent implements OnInit {
   @Input()
   candidatePriorEmployer: string;
 
-    nameInitials: string;
-  // nameInitials: string = "SJ";
+  @Input()
+  isInTN: boolean;
+
+  nameInitials: string;
   
   constructor() { }
 
