@@ -8,6 +8,29 @@
   display: inline-block;
   margin: 20px;
 }
+.board {
+  position: absolute;
+  width: 1220px;
+  left: 0px;
+  z-index: 1;
+}
+
+.boardShadow {
+  position: absolute;
+  width: 1220px;
+  top: -50px;
+  left: 0px;
+  z-index: 0;
+}
+
+.boardItemShadow {
+  height: 897.99px;
+  min-width: 291px;
+  border-radius: 3px;
+  background-color: #334444;
+  display: inline-block;
+  margin: 20px;
+}
 
 .itemHeader {
   padding-left: 18px;
@@ -69,8 +92,13 @@
 
 .drag-target-border {
   border: #00bfff dashed 2px;
+  opacity: 0.5;
 }
 
 .drag-target-border-green {
   border: #3c763d dashed 2px;
+}
+
+.drag-overShadow {
+    border: 2px dashed rgba(170,170,170,0.8);
 }

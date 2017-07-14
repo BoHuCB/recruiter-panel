@@ -6,6 +6,7 @@ export class Dashboard {
 }
 
 export interface IDashboardColumnModel {
+    did: string;
     title: string;
     status: number;
     orderNumber: number;

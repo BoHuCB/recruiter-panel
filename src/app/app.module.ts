@@ -14,7 +14,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardService } from './services/dashboard.service';
 import { CandidateCardComponent } from './modules/candidate-card/candidate-card.component';
 import { SearchBoxComponent } from './modules/search-box/search-box.component';
-
+import { OrderByStatusPipe } from './pipes/order-by-status.pipe';
 import { TabControlComponent } from './modules/tab-control/tab-control.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { InsightCardComponent } from './modules/insight-card/insight-card.component';
@@ -33,7 +33,8 @@ const cbvdl = [
     CandidateCardComponent,
     SearchBoxComponent,
     TabControlComponent,
-    InsightCardComponent
+    InsightCardComponent,
+    OrderByStatusPipe
   ],
   imports: [
     BrowserModule,
