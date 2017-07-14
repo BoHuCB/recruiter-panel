@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Candidate } from '../../models/candidate.model';
 
 @Component({
   selector: 'app-candidate-card',
@@ -8,6 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CandidateCardComponent implements OnInit {
 
   @Input()
+  Item: Candidate;
+
+  @Input()
   candidateName: string;
 
   @Input()
@@ -15,7 +19,7 @@ export class CandidateCardComponent implements OnInit {
 
   @Input()
   candidateLocaion: string;
-  
+
   @Input()
   candidateCurrentJob: string;
 
@@ -28,13 +32,13 @@ export class CandidateCardComponent implements OnInit {
   @Input()
   candidatePriorEmployer: string;
 
-    nameInitials: string;
+  nameInitials: string;
   // nameInitials: string = "SJ";
-  
+
   constructor() { }
 
   ngOnInit() {
-      this.nameInitials = this.candidateName.split(' ')[0][0].toUpperCase() + this.candidateName.split(' ')[1][0].toUpperCase();
+    this.nameInitials = this.candidateName.split(' ')[0][0].toUpperCase() + this.candidateName.split(' ')[1][0].toUpperCase();
   }
 
 }

@@ -1,4 +1,5 @@
 export class Candidate {
+    did: string;
     name: string;
     currentTitle: string;
     location: string;
