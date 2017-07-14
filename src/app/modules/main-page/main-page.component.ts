@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../../services/message.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  content: string;
+  constructor(private messageService: MessageService) { }
 
   ngOnInit() {
+    this.messageService.oMessage.subscribe(
+      data => {
+        this.content = data;
+      }
+    )
   }
 
    CBSearchMenuItems: any = [

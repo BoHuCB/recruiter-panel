@@ -6,6 +6,7 @@
 
     <div>
       <app-search-box></app-search-box>
+        <div class="alert alert-success alert-dissmissable" *ngIf="content != ''">{{content}}</div>
     </div>
 
     <div class="panel container-fluid">

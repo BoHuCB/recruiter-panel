@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../../services/dashboard.service';
 import { IDashboardColumnModel } from '../../models/dashboard.model';
 import { Candidate } from '../../models/candidate.model';
+import { MessageService } from '../../services/message.service';
+
 
 @Component({
   selector: 'app-dahsboard',
@@ -12,7 +14,8 @@ export class DashboardComponent implements OnInit {
 
   itemsList: Array<IDashboardColumnModel> = new Array<IDashboardColumnModel>();
 
-  constructor(private dashboardService: DashboardService) { }
+
+  constructor(private dashboardService: DashboardService, private messageService: MessageService) { }
 
   ngOnInit() {
 
@@ -28,6 +31,8 @@ export class DashboardComponent implements OnInit {
     this.removeItem(control.dragData);
 
     (<Candidate>control.dragData).status = destStatus;
+
+    this.messageService.showMessage(control.dragData);
   }
 
   removeItem(item: Candidate) {

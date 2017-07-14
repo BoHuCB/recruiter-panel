@@ -12,6 +12,7 @@ import { appRoutes } from "./app.routing";
 import { RouterModule } from "@angular/router";
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardService } from './services/dashboard.service';
+import { MessageService } from './services/message.service'
 import { CandidateCardComponent } from './modules/candidate-card/candidate-card.component';
 import { SearchBoxComponent } from './modules/search-box/search-box.component';
 
@@ -45,7 +46,8 @@ const cbvdl = [
     TabsModule.forRoot()
   ],
   providers: [
-    DashboardService
+    DashboardService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
