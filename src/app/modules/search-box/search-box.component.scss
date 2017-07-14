@@ -1,0 +1,78 @@
+.search-square {
+    	height: 179px;	
+        width: 1250px;	
+        border: 1px solid #E9E9E9;	
+        border-radius: 3px;	
+        background-color: #FFFFFF;	
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);
+        position: relative;
+        margin-top: 30px;
+}
+
+.search-text {
+    	height: 35px;	
+        width: 397px;	
+        border: 1px solid #D8D8D8;	
+        border-radius: 3px;	
+        background-color: #FFFFFF;
+        position: absolute;
+        margin-top: 127px;
+        margin-left: 24px;
+        margin-bottom: 17px;
+}
+
+.placeholder-icon {
+    position: absolute;
+   	height: 18px;	
+    width: 13px;	
+    color: #767676;	
+    font-family: FontAwesome;	
+    font-size: 14px;	
+    line-height: 18px;	
+    text-align: center;
+    margin-top: 135px;
+    margin-left: 399px;
+}
+
+::placeholder {
+  height: 18px;	
+  width: 52px;	
+  color: #767676;	
+  font-family: Lato;	
+  font-size: 14px;	
+  line-height: 18px;
+  padding-left: 20px;
+  position: absolute;
+}
+
+.candidates-insight {
+    	height: 90px;	
+        width: 1174px;	
+        border: 1px solid #1EA1D9;	
+        background-color: rgba(9,160,219,0.05);
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 24px;
+}
+
+.search-font1 {
+    	height: 16px;	
+        width: 194px;	
+        color: #182642;	
+        font-family: Lato;	
+        font-size: 16px;	
+        line-height: 16px;
+        margin-top: 13px;
+        margin-left: 15px;
+}
+
+.search-font2 {
+    height: 16px;	
+    width: 565px;	
+    color: #767676;	
+    font-family: Lato;	
+    font-size: 12px;	
+    line-height: 16px;
+    margin-top: 14px;
+    margin-left: 14px;
+}

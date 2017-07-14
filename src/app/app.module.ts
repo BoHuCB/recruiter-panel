@@ -13,6 +13,8 @@ import { RouterModule } from "@angular/router";
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardService } from './services/dashboard.service';
 import { CandidateCardComponent } from './modules/candidate-card/candidate-card.component';
+import { SearchBoxComponent } from './modules/search-box/search-box.component';
+
 import { TabControlComponent } from './modules/tab-control/tab-control.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 
@@ -28,6 +30,7 @@ const cbvdl = [
     MainPageComponent,
     DashboardComponent,
     CandidateCardComponent,
+    SearchBoxComponent,
     TabControlComponent
   ],
   imports: [
