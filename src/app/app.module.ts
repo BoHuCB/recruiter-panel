@@ -7,7 +7,6 @@ import { Http, HttpModule, RequestOptions, XHRBackend } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './modules/main-page/main-page.component';
-import { StageComponent } from './modules/stage/stage.component';
 import { Ng2DragDropModule } from 'ng2-drag-drop';
 import { appRoutes } from "./app.routing";
 import { RouterModule } from "@angular/router";
@@ -28,9 +27,13 @@ const cbvdl = [
     AppComponent,
     MainPageComponent,
     DashboardComponent,
+<<<<<<< HEAD
     StageComponent,
     CandidateCardComponent,
     TabControlComponent
+=======
+    CandidateCardComponent
+>>>>>>> 42464a6f64d2c9122900fc24bfc9d74a0111350b
 
   ],
   imports: [

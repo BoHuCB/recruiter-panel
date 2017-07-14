@@ -1,23 +1,14 @@
-<cb-framework [headerObj]="headerObj" (ngValueChange)="handleHeaderChanges($event)">
+<cb-framework [headerObj]="headerObj">
   <div class="body">
     <div class="sub-header container-fluid">
       <app-tab-control></app-tab-control>
     </div>
 
-    <div class="search container-fluid"></div>
+    <div class="search container-fluid">
+    </div>
 
     <div class="panel container-fluid">
-  <div class="row">
-    <div class="column container">
-      <app-candidate-card></app-candidate-card>
+      <app-dahsboard>main page works</app-dahsboard>
     </div>
-    <div class="column container"></div> 
-    <div class="column container"></div>
-  </div>
-    </div>
-
-    <app-dahsboard>main page works</app-dahsboard>
-
   </div>
 </cb-framework>
-

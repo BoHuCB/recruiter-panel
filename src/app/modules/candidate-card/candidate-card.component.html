@@ -1,12 +1,27 @@
-<div class="card">
+<div class="card" draggable="true" [dragScope]="'candidates'" [dragData]="Item" 
+[dragClass]="'drag-over'">
+
+  <div class="square-tn" *ngIf="isInTN"><p class="word-tn">In your TN</p></div>
+
+  <div><input type="checkbox" class="icon-checkbox"></div>
+  <div class="name-square"><span class="name-initials">{{nameInitials}}</span></div>
+  <div class="icon-ellipsis icons">
+    <div class="fa fa-ellipsis-v"></div>
+  </div>
   <div class="name-location">
-    <p class="name font-style1">Sarah Johnson</p>
-    <p class="title font-style1">Senior Designer </p>
-    <p class="location font-style1">Atlanta, Ga</p>
+    <p class="name font-style1">{{candidateName}}</p>
+    <p class="title font-style1">{{candidateCurrentTitle}} </p>
+    <p class="location font-style1">{{candidateLocaion}}</p>
   </div>
   <div class="job-info">
-    <p class="font-style2">Current:Senior Designer(5 yrs, 1mo),Google</p> 
-    <p class="font-style2 job-prior">Prior:Designer (3 yrs, 4mo),CarreBuilder</p>
+    <p class="font-style2"><span class="current-prior">Current: </span><b>{{candidateCurrentJob}}, </b>{{candidateCurrentEmployer}}</p>
+    <p class="font-style2 job-prior"><span class="current-prior">Prior: </span><b>{{candidatePriorJob}}, </b>{{candidatePriorEmployer}}</p>
   </div>
-  <div class="line"></div>
+  <span class="line"></span>
+  <div class="card-footer">
+    <span class="fa fa-star-o icon-star icons"></span>
+    <span class="fa fa-envelope icon-envelope icons"></span>
+    <span class="fa fa-phone icon-phone icons"></span>
+    <span class="footer-word icons">Add to <span class="fa fa-angle-down"></span></span>
+  </div>
 </div>
