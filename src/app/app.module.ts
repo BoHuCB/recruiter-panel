@@ -17,6 +17,7 @@ import { SearchBoxComponent } from './modules/search-box/search-box.component';
 
 import { TabControlComponent } from './modules/tab-control/tab-control.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { InsightCardComponent } from './modules/insight-card/insight-card.component';
 
 const cbvdl = [
   HeaderModule,
@@ -31,7 +32,8 @@ const cbvdl = [
     DashboardComponent,
     CandidateCardComponent,
     SearchBoxComponent,
-    TabControlComponent
+    TabControlComponent,
+    InsightCardComponent
   ],
   imports: [
     BrowserModule,
