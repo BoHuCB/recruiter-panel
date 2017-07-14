@@ -1,5 +1,18 @@
 <div class="d-flex justify-content-center">
-  <div *ngFor="let element of itemsList" class="boardItem">
+  <div *ngFor="let element of itemsList" class="boardItem" droppable>
     <input class="Itemlabel" [(ngModel)]="element.title" />
+    <div class="dashboardItem">
+
+      <app-candidate-card *ngFor="let cand of element.candidates"
+      [candidateName]="'Sarah Johnson'" 
+      [candidateCurrentTitle]="'Senior Designer'" 
+      [candidateLocaion]="'Atlanta, GA'"
+      [candidateCurrentJob] = "'SeniorDesinger(5 yrs, 1 mo)'"
+      [candidateCurrentEmployer] = "'Google'"
+      [candidatePriorJob] = "'Designer(3 yrs, 4 mo)'"
+      [candidatePriorEmployer] = "'CareerBuilder'"      
+      ></app-candidate-card>
+
+    </div>
   </div>
 </div>

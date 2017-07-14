@@ -1,3 +1,5 @@
+import { Candidate } from './candidate.model';
+
 export class Dashboard {
     name: string;
     ItemColumns: Array<IDashboardColumnModel>;
@@ -9,5 +11,6 @@ export interface IDashboardColumnModel {
     orderNumber: number;
     style: string;
     isDraggable: boolean;
-    isDropable: boolean;    
+    isDropable: boolean;
+    candidates: Array<Candidate>;
 }
