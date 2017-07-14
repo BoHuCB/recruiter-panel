@@ -14,7 +14,8 @@ import { RouterModule } from "@angular/router";
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardService } from './services/dashboard.service';
 import { CandidateCardComponent } from './modules/candidate-card/candidate-card.component';
-
+import { TabControlComponent } from './modules/tab-control/tab-control.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 const cbvdl = [
   HeaderModule,
@@ -28,7 +29,8 @@ const cbvdl = [
     MainPageComponent,
     DashboardComponent,
     StageComponent,
-    CandidateCardComponent
+    CandidateCardComponent,
+    TabControlComponent
 
   ],
   imports: [
@@ -37,7 +39,8 @@ const cbvdl = [
     ...cbvdl,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    TabsModule.forRoot()
   ],
   providers: [
     DashboardService
