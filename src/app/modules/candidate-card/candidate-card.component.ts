@@ -27,10 +27,14 @@ export class CandidateCardComponent implements OnInit {
 
   @Input()
   candidatePriorEmployer: string;
+
+    nameInitials: string;
+  // nameInitials: string = "SJ";
   
   constructor() { }
 
   ngOnInit() {
+      this.nameInitials = this.candidateName.split(' ')[0][0].toUpperCase() + this.candidateName.split(' ')[1][0].toUpperCase();
   }
 
 }

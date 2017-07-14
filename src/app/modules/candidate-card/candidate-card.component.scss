@@ -81,9 +81,75 @@
     position:absolute;
 }
 
+
+.icon-star {	
+        margin-top: -4px;
+}
+
+.icon-envelope {
+        margin-top: -4px;
+        margin-left: 23px;
+}
+
+.icon-phone {
+        margin-top: -4px;
+        margin-left: 48px;
+}
+
 .icons {
-    	height: 13px;	
+        height: 13px;	
         width: 16px;	
         color: #287AB9;	
         font-size: 13px;	
+        position: absolute;
+        cursor: pointer;
+}
+
+.footer-word {
+    width: 54px;	
+    font-family: Lato;	
+    font-weight: bold;	
+    line-height: 13px;	
+    text-align: right;        
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 160px;
+}
+
+.icon-ellipsis {
+        line-height: 13px;	
+        margin-left: 237px;
+        margin-top: 6px;
+}
+
+.icon-checkbox {
+	height: 15.07px;	
+    width: 15px;	
+    border: 1px solid #979797;
+    margin-left: 4px;
+}
+
+.name-square {
+    width: 47px;
+    height: 47px;
+    background-color: greenyellow;
+    margin-left: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.name-initials {
+    color: white;
+    font-size: 22px;
+    padding-left: 12px;
+    position: absolute;
+    padding-top: 9px;
+}
+
+.square-tn {
+    height: 24px;	
+    width: 90px;	
+    border: 1px solid #2A7AB8;	
+    border-radius: 13px;	
+    background-color: #FFFFFF;
 }
