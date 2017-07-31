@@ -1,29 +1,57 @@
-<div class="d-flex justify-content-center board">
-  <div *ngFor="let element of itemsList | orderByStatus; let i =index; trackBy: trackByFn" class="boardItem" droppable [dragOverClass]="'drag-target-border'" [dropScope]="'candidates'"
-    draggable="true" (onDrop)="onDropElement($event, element.status)" (onDragEnter)="onDragElement($event)" [dragScope]="'dashboardItems'" [dragClass]="'drag-overShadow'"
-    [dragData]="element">
+<div class="d-flex justify-content-center board" #dashboard>
+  <div *ngFor="let element of itemsList | orderByStatus; let i =index;" 
+        class="boardItem" 
+        droppable 
+        [draggable]="true" 
+        [dropScope]="'candidates'"
+        [dragScope]="'dashboardItems'" 
+        [dragData]="element" 
+        [dragClass]="'drag-overShadow'" 
+        [dragOverClass]="'drag-target-border'"
+        (onDrop)="onDropElement($event, element.status)" 
+        (onDragEnter)="onDragElement($event)" 
+        (onDragStart)="onDragStart($event)"
+        (onDragEnd)="onDragEnd($event)" 
+        >
     <div class="itemHeader">
+
       <i class="fa fa-circle" aria-hidden="true" [class.circleColor1]="i==0" [class.circleColor2]="i==1" [class.circleColor3]="i==2"
         [class.circleColor4]="i==3" [class.circleColor5]="i==4" [class.circleColor6]="i==5"></i>
+
       <label class="itemlabel">{{element.title}}</label>
       <input class="itemlabel" *ngIf="false" [(ngModel)]="element.title" />
       <label class="labelNumber">({{ element.candidates.length }})</label>
+
       <div class="itemActions">
         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
       </div>
     </div>
-    <div class="dashboardItem">
-      <app-candidate-card *ngFor="let cand of element.candidates" [Item]="cand" [candidateName]="cand.name" [candidateCurrentTitle]="cand.currentTitle"
-        [candidateLocaion]="cand.location" [candidateCurrentJob]="cand.currentJob" [candidateCurrentEmployer]="cand.currentEmployer"
-        [candidatePriorJob]="cand.priorJob" [candidatePriorEmployer]="cand.priorEmployer"></app-candidate-card>
 
-        <div *ngFor="let cand of element.candidates"></div>
+    <div class="dashboardItem">
+      <app-candidate-card *ngFor="let cand of element.candidates; let candIndex = index;" 
+                          [Item]="cand" 
+                          [Index] = "candIndex"                          
+                          [candidateName]="cand.name" 
+                          [candidateCurrentTitle]="cand.currentTitle"
+                          [candidateLocaion]="cand.location" 
+                          [candidateCurrentJob]="cand.currentJob" 
+                          [candidateCurrentEmployer]="cand.currentEmployer"
+                          [candidatePriorJob]="cand.priorJob" 
+                          [candidatePriorEmployer]="cand.priorEmployer"></app-candidate-card>
+
+      <div *ngFor="let cand of element.candidates"></div>
     </div>
   </div>
-</div>
 
-<div id="boardShadow" class="d-flex justify-content-center boardShadow">
-  <div *ngFor="let element of itemsList" class="boardItemShadow" droppable [dragOverClass]="'drag-target-border'"
-    [dropScope]="'dashboardItems'" (onDrop)="onDropElementShadow($event, element.status)">
+  <div class="d-flex justify-content-center drag-target">
+    <div *ngFor="let element of itemsList" 
+          class="boardItemShadow" 
+          droppable 
+          [dropScope]="'dashboardItems'" 
+          (onDrop)="onDropElementShadow($event, element.status)"
+          [dragOverClass]="'drag-target-border'" 
+          [dragHintClass]="'drag-target-hint-shadow'"
+          >
+    </div>
   </div>
 </div>

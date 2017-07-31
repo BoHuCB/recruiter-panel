@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { DashboardService } from '../../services/dashboard.service';
 import { IDashboardColumnModel } from '../../models/dashboard.model';
 import { Candidate } from '../../models/candidate.model';
@@ -9,6 +9,7 @@ import { Candidate } from '../../models/candidate.model';
     styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+    @ViewChild('dashboard') dashboard: ElementRef;
 
     itemsList: Array<IDashboardColumnModel> = new Array<IDashboardColumnModel>();
 
@@ -34,7 +35,7 @@ export class DashboardComponent implements OnInit {
 
         let origin = this.itemsList.filter(element => { return element.status === item.status })[0].candidates;
 
-        let index = origin.map(function(e) {
+        let index = origin.map(function (e) {
             return e.did
         }).indexOf(item.did);
 
@@ -55,7 +56,16 @@ export class DashboardComponent implements OnInit {
     }
 
     onDragElement(object) {
-      debugger;
+    }
+
+    onDragStart(object) {
+        object.currentTarget.classList.add('toFront');
+        this.dashboard.nativeElement.classList.add('toBack');
+    }
+
+    onDragEnd(object) {
+        this.dashboard.nativeElement.classList.remove('toBack');
+        object.currentTarget.classList.remove('toFront');
     }
 
     moveElementArray(array: Array<any>, prev_index, new_index) {

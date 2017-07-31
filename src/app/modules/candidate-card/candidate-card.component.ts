@@ -9,6 +9,9 @@ import { Candidate } from '../../models/candidate.model';
 export class CandidateCardComponent implements OnInit {
 
   @Input()
+  Index: number;
+
+  @Input()
   Item: Candidate;
 
   @Input()

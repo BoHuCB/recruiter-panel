@@ -1,174 +1,267 @@
 .card {
-    	height: 184px;	
-        width: 253px;	
-        border: 1px solid #D8D8D8;
-        border-radius: 3px;	
-        background-color: #FFFFFF;
-        position:relative;
-        margin-top: 30px;
+  height: 184px;
+  width: 253px;
+  border: 1px solid #D8D8D8;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-top: 30px;
 }
 
 .name-location {
-    height: 50px;	
-    width: 157px;	
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 76px;
-    margin-bottom: 114px;
-    position:absolute;
+  height: 50px;
+  width: 157px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 76px;
+  margin-bottom: 114px;
+  position: absolute;
 }
 
 .job-info {
-    	height: 64px;	
-        width: 213px;	
-        position:absolute;
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-top: 76px;
-        margin-bottom: 44px;
+  height: 64px;
+  width: 213px;
+  position: absolute;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 76px;
+  margin-bottom: 44px;
 }
 
 .line {
-    	box-sizing: border-box;	
-        height: 3px;	
-        width: 253px;	
-        border: 1px solid #D8D8D8;
-        margin-top: 150.6px;
-        position:absolute;
+  box-sizing: border-box;
+  height: 3px;
+  width: 253px;
+  border: 1px solid #D8D8D8;
+  margin-top: 150.6px;
+  position: absolute;
 }
 
 .name {
-    color: #2A7AB8;	
-    font-weight: bold;	
+  color: #2A7AB8;
+  font-weight: bold;
 }
 
 .font-style1 {
-    font-family: Lato;	
-    font-size: 14px;	
-    line-height: 17px;
-    opacity: 1;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 1;
 }
 
-.title{
-    font-weight: bold;	
-    margin-top: -18px;
-    font-weight: bold;	
+.title {
+  font-weight: bold;
+  margin-top: -18px;
+  font-weight: bold;
 }
 
 .location {
-    margin-top: -18px;
+  margin-top: -18px;
 }
 
 .font-style2 {
-   font-family: Lato;	
-   font-size: 13px;	
-   line-height: 16px;
-   opacity: 1;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 1;
 }
 
 .job-prior {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 
 .current-prior {
-    color: #AAAAAA;
+  color: #AAAAAA;
 }
 
 .card-footer {
-    height: 10px;	
-    width: 213px;	
-    margin-top: 153.6px;
-    background-color: white;
-    position:absolute;
+  height: 10px;
+  width: 213px;
+  margin-top: 153.6px;
+  background-color: white;
+  position: absolute;
 }
 
-
-.icon-star {	
-        margin-top: -4px;
+.icon-star {
+  margin-top: -4px;
 }
 
 .icon-envelope {
-        margin-top: -4px;
-        margin-left: 23px;
+  margin-top: -4px;
+  margin-left: 23px;
 }
 
 .icon-phone {
-        margin-top: -4px;
-        margin-left: 48px;
+  margin-top: -4px;
+  margin-left: 48px;
 }
 
 .icons {
-        height: 13px;	
-        width: 16px;	
-        color: #287AB9;	
-        font-size: 13px;	
-        position: absolute;
-        cursor: pointer;
+  height: 13px;
+  width: 16px;
+  color: #287AB9;
+  font-size: 13px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .footer-word {
-    width: 54px;	
-    font-family: Lato;	
-    font-weight: bold;	
-    line-height: 13px;	
-    text-align: right;        
-    position: absolute;
-    margin-top: -4px;
-    margin-left: 160px;
+  width: 54px;
+  font-family: Lato;
+  font-weight: bold;
+  line-height: 13px;
+  text-align: right;
+  position: absolute;
+  margin-top: -4px;
+  margin-left: 160px;
 }
 
 .icon-ellipsis {
-        line-height: 13px;	
-        margin-left: 237px;
-        margin-top: 6px;
+  line-height: 13px;
+  margin-left: 237px;
+  margin-top: 6px;
 }
 
 .icon-checkbox {
-	height: 15.07px;	
-    width: 15px;	
-    border: 1px solid #979797;
-    margin-left: 4px;
+  height: 15.07px;
+  width: 15px;
+  border: 1px solid #979797;
+  margin-left: 4px;
 }
 
 .name-square {
-    width: 47px;
-    height: 47px;
-    background-color: greenyellow;
-    margin-left: 20px;
-    border-radius: 5px;
-    position: relative;
-    margin-top: 1px;
+  width: 47px;
+  height: 47px;
+  margin-left: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 1px;
 }
 
 .name-initials {
-    color: white;
-    font-size: 22px;
-    padding-left: 12px;
-    position: absolute;
-    padding-top: 9px;
+  color: white;
+  font-size: 22px;
+  padding-left: 12px;
+  position: absolute;
+  padding-top: 9px;
 }
 
 .square-tn {
-    height: 24px;	
-    width: 90px;	
-    border: 1px solid #2A7AB8;	
-    border-radius: 13px;	
-    background-color: #FFFFFF;
-    margin-top: -12px;
-    margin-left: 20px;
-    position: absolute;
+  height: 24px;
+  width: 90px;
+  border: 1px solid #2A7AB8;
+  border-radius: 13px;
+  background-color: #FFFFFF;
+  margin-top: -12px;
+  margin-left: 20px;
+  position: absolute;
 }
 
 .word-tn {
-    height: 16px;	
-    width: 64px;	
-    color: #2A7AB8;	
-    font-size: 13px;	
-    line-height: 13px;
-    margin-left: 11px;
-    margin-top: 4px;
+  height: 16px;
+  width: 64px;
+  color: #2A7AB8;
+  font-size: 13px;
+  line-height: 13px;
+  margin-left: 11px;
+  margin-top: 4px;
 }
 
 .drag-over {
-    border: 2px dashed rgba(170,170,170,0.8);
+  border: 2px dashed rgba(170, 170, 170, 0.8);
+}
+
+
+.name-square-n0 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n1 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n2 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n3 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n4 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n5 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n6 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n7 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n8 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n9 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n10 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n11 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n12 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n13 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n14 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n15 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n16 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n17 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n18 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+
+.name-square-n19 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n20 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+.name-square-n21 {
+  background-color: rgb(random(255), random(255), random(255));
+}
+
+
+.name-square-n22 {
+  background-color: rgb(random(255), random(255), random(255));
 }

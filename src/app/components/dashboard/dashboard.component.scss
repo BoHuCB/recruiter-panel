@@ -1,37 +1,39 @@
-.dashboard {}
-
 .boardItem {
-  height: 897.99px;
+  height: 800px;
   min-width: 291px;
   border-radius: 3px;
   background-color: #F6F6F6;
   display: inline-block;
   margin: 20px;
+  z-index: 1;
 }
+
 .board {
-  position: absolute;
+  position: relative;
   width: 1220px;
   left: 0px;
   z-index: 1;
 }
 
-.boardShadow {
+.drag-target {
   position: absolute;
   width: 1220px;
-  top: -50px;
   left: 0px;
   z-index: 0;
 }
 
 .boardItemShadow {
-  height: 897.99px;
+  height: 800px;
   min-width: 291px;
   border-radius: 3px;
   background-color: #334444;
   display: inline-block;
   margin: 20px;
+  opacity: 0;
+  z-index: 0;
 }
 
+;
 .itemHeader {
   padding-left: 18px;
   padding-top: 20px;
@@ -54,10 +56,10 @@
   margin-top: 20px;
   padding: 20px;
   overflow: scroll;
-  height: 800px;
+  height: 720px;
 }
 
-.dashboardItem /deep/ > div {
+.dashboardItem /deep/> div {
   margin-bottom: 20px;
 }
 
@@ -91,7 +93,7 @@
 }
 
 .drag-target-border {
-  border: #00bfff dashed 2px;
+  border: #FFFFFF dashed 2px;
   opacity: 0.5;
 }
 
@@ -100,5 +102,33 @@
 }
 
 .drag-overShadow {
-    border: 2px dashed rgba(170,170,170,0.8);
+  border: 5px dashed #3c763d;
+  opacity: 0.2;
+}
+
+.drag-target-hint-shadow {
+  // border: #FFFFFF dashed 2px;
+  background-color: #7EAFD5;
+  opacity: 1;
+}
+
+.toFront {
+  z-index: 1;
+  left: 0px;
+}
+
+.toBack .boardItem {
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.toBack .toFront {
+  z-index: 1;
+  opacity: 0.4;
+}
+
+
+.noVisible {
+  position: absolute;
+  left: 0px;
 }
